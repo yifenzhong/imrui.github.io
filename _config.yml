@@ -14,7 +14,7 @@ description: > # this means to ignore newlines until "baseurl:"
   走山路就跟走人生的路一样，你不会轻易地知道下一条路在哪里，要怎样走才算对，还要多久才能抵达。
   错过和遇见都是对等的，没有公平与不公平，但凡小有成就的人，都一定是走了一条别人不愿意走的路，或泥泞不堪，或荆棘丛生。
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://imrui.cc" # the base hostname & protocol for your site
+url: "http://imrui.net" # the base hostname & protocol for your site
 twitter_username: imruido
 github_username:  imrui
 
