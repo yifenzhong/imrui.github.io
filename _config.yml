@@ -6,10 +6,12 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: I am Rui
-seo_title: 董瑞的博客 | Rui Blog
+title: 董瑞博客 | Rui Blog
+name: 董瑞博客
 keyword: "董瑞, 瑞, Rui, imrui, @imrui, dongrui, ruidong, app, 博客, 个人网站, 互联网, 游戏"
 email: hilo.sky.do@gmail.com
+location: Beijing, China
+github_url: https://github.com/imrui
 description: > # this means to ignore newlines until "baseurl:"
   走山路就跟走人生的路一样，你不会轻易地知道下一条路在哪里，要怎样走才算对，还要多久才能抵达。
   错过和遇见都是对等的，没有公平与不公平，但凡小有成就的人，都一定是走了一条别人不愿意走的路，或泥泞不堪，或荆棘丛生。
@@ -20,3 +22,40 @@ github_username:  imrui
 
 # Build settings
 markdown: kramdown
+
+# Disque
+disque: httpimruigithubio.disqus.com
+
+# Pagination
+paginate: 10
+paginate_path: 'page:num'
+
+# Navigation
+navs:
+  -
+    href: /
+    label: Home
+
+  -
+    href: /photos
+    label: Photos
+
+  -
+    href: /blog
+    label: Blogs
+
+  -
+    href: /bookmark
+    label: Bookmark
+
+  -
+    href: /about
+    label: About
+
+# Sidebar to show popular repo
+side_bar_repo_limit: 5 # Number of repos to show
+
+# For about.html. Fell free to create your own!
+skill_software_keywords: [Java, Python, Golang, C, lua, MySQL, Android, Linux, Nginx]
+skill_j2ee_keywords: [Spring, SpringMVC, MyBatis, Struct, Play Framework, JSP, Velocity]
+skill_web_keywords: [Tornado, Flask, Django, AngularJS, Boostrap, HTML, CSS, JS, JQuery, Ajax]
