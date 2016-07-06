@@ -20,11 +20,13 @@ url: "http://imrui.net" # the base hostname & protocol for your site
 twitter_username: imruido
 github_username:  imrui
 
-# Build settings
-markdown: kramdown
-
 # Disque
-disque: httpimruigithubio.disqus.com
+disque: imrui.disqus.com
+
+gems:
+  - jekyll-paginate
+  - jekyll-geo-pattern
+  - jekyll-github-metadata
 
 # Pagination
 paginate: 10
@@ -37,10 +39,6 @@ navs:
     label: Home
 
   -
-    href: /photos
-    label: Photos
-
-  -
     href: /blog
     label: Blogs
 
@@ -51,6 +49,9 @@ navs:
   -
     href: /about
     label: About
+
+# Google Analytics
+google_tracking_id: 'UA-80328712-1'
 
 # Sidebar to show popular repo
 side_bar_repo_limit: 5 # Number of repos to show
