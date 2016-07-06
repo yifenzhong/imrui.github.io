@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bookmark
+title: 书签
 subtitle: <span class="mega-octicon octicon-repo"></span>&nbsp;&nbsp; To mark useful libs - tools - books
 menu: 书签
 ---
