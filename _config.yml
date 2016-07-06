@@ -36,19 +36,19 @@ paginate_path: 'page:num'
 navs:
   -
     href: /
-    label: Home
+    label: 首页
 
   -
     href: /blog
-    label: Blogs
+    label: 博文
 
   -
     href: /bookmark
-    label: Bookmark
+    label: 书签
 
   -
     href: /about
-    label: About
+    label: 关于
 
 # Google Analytics
 google_tracking_id: 'UA-80328712-1'
