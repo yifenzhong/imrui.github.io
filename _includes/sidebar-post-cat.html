@@ -3,7 +3,7 @@
     <ul class="list-group">
         {% for category in site.categories %}
         <li class="list-group-item">
-            <a href="#{{ category[0] }}" title="{{ category[0] }}">{{ category | first }}</a>
+            <a href="javascript:void(0)" title="{{ category[0] }}">{{ category | first }}</a>
             <span class="badge">{{ category[1].size }}</span>
         </li>
         {% endfor %}

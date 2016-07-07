@@ -5,3 +5,24 @@
 .post-cat-show {
     display: block;
 }
+
+#blog-categories a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#blog-categories li {
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+}
+
+#blog-categories li:hover {
+    background: #333;
+}
+
+#blog-categories li:hover a {
+    font-weight: bold;
+    color: #fff;
+}

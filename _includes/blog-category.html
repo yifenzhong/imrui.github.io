@@ -29,9 +29,9 @@
     $(function(){
         var cat = $(".list-group-item:first").find("a").attr("title");
         $("." + cat).removeClass("post-cat-hide").addClass("post-cat-show");
-        $(".list-group-item > a").click(function () {
+        $(".list-group-item").click(function () {
             $(".post-cat-show").removeClass("post-cat-show").addClass("post-cat-hide");
-            var title = $(this).attr("title");
+            var title = $(this).find("a").attr("title");
             $("." + title).removeClass("post-cat-hide").addClass("post-cat-show");
         });
     });
