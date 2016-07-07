@@ -1,5 +1,18 @@
 <section class="content container">
     <div class="row">
+        <div class="col-md-4">
+            <h3 class="sidebar-title">{{ site.post_category_name }}</h3>
+            <div id="blog-categories">
+                <ul class="list-group">
+                    {% for category in site.categories %}
+                    <li class="list-group-item">
+                        <a href="javascript:void(0)" title="{{ category[0] }}">{{ category | first }}</a>
+                        <span class="badge">{{ category[1].size }}</span>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
         <!-- Post List -->
         <div class="col-md-8">
             <ol class="post-list">
@@ -19,19 +32,6 @@
             </ol>
             <!-- Comments -->
             {% include disqus-comments.html %}
-        </div>
-        <div class="col-md-4">
-            <h3 class="sidebar-title">博文分类</h3>
-            <div id="blog-categories">
-                <ul class="list-group">
-                    {% for category in site.categories %}
-                    <li class="list-group-item">
-                        <a href="javascript:void(0)" title="{{ category[0] }}">{{ category | first }}</a>
-                        <span class="badge">{{ category[1].size }}</span>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </div>
         </div>
     </div>
 </section>

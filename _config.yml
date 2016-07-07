@@ -58,6 +58,9 @@ navs:
     href: /about
     label: 关于
 
+post_category_name: 博文分类
+post_nav_name: 文内导航
+
 # Google Analytics
 google_tracking_id: 'UA-80328712-1'
 
