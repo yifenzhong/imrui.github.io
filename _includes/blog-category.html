@@ -1,0 +1,38 @@
+<section class="content container">
+    <div class="row">
+        <!-- Post List -->
+        <div class="col-md-8">
+            <ol class="post-list">
+                {% for post in site.posts %}
+                <li class="post-list-item {% if post.category == 'site.categories[0][0]' %}post-cat-show{% else %}post-cat-hide{% endif %}  {{ post.category }}">
+                    <h2 class="post-list-title">
+                        <a class="hvr-underline-from-center" href="{{ post.url }}">{{ post.title }}</a>
+                    </h2>
+                    <p class="post-list-description">
+                        {{ post.excerpt | strip_html | strip }}
+                    </p>
+                    <p class="post-list-meta">
+                        <span class="octicon octicon-calendar"></span> {{ post.date | date: "%Y/%m/%d" }}
+                    </p>
+                </li>
+                {% endfor %}
+            </ol>
+            <!-- Comments -->
+            {% include disqus-comments.html %}
+        </div>
+        <div class="col-md-4">
+            {% include sidebar-post-cat.html %}
+        </div>
+    </div>
+</section>
+<script>
+    $(function(){
+        var cat = $(".list-group-item:first").find("a").attr("title");
+        $("." + cat).removeClass("post-cat-hide").addClass("post-cat-show");
+        $(".list-group-item > a").click(function () {
+            $(".post-cat-show").removeClass("post-cat-show").addClass("post-cat-hide");
+            var title = $(this).attr("title");
+            $("." + title).removeClass("post-cat-hide").addClass("post-cat-show");
+        });
+    });
+</script>

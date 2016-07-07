@@ -47,6 +47,10 @@ navs:
     label: 博文
 
   -
+    href: /category
+    label: 归档
+
+  -
     href: /bookmark
     label: 书签
 
