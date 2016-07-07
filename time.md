@@ -1,8 +1,8 @@
 ---
 layout: page
-title: 博文归档
+title: 时光机
 subtitle: <span class="mega-octicon octicon-clippy"></span>&nbsp;&nbsp; Take notes about everything new
-menu: 博文归档
-css: ['blog-category.css']
+menu: 时光机
+css: ['blog-time-line.css']
 ---
-{% include blog-category.html %}
+{% include blog-time-line.html %}

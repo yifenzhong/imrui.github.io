@@ -47,12 +47,12 @@ navs:
     label: 博文
 
   -
-    href: /category
-    label: 归档
-
-  -
     href: /bookmark
     label: 书签
+
+  -
+    href: /time
+    label: 时光机
 
   -
     href: /about
