@@ -8,14 +8,14 @@
 # Site settings
 title: 董瑞博客 | Rui Blog
 name: 董瑞博客
-en_name: DongRui Blog
+home_title: 白首如新 倾盖如故
+home_sub_title: 时间是我们正在服下的毒药，也是未来我们的解药。
 keyword: "董瑞, 瑞, Rui, imrui, @imrui, dongrui, ruidong, app, 博客, 个人网站, 互联网, 游戏"
 qq: 25230462
 email: hilo.sky.do@gmail.com
 location: Beijing, China
 description: > # this means to ignore newlines until "baseurl:"
-  走山路就跟走人生的路一样，你不会轻易地知道下一条路在哪里，要怎样走才算对，还要多久才能抵达。
-  错过和遇见都是对等的，没有公平与不公平，但凡小有成就的人，都一定是走了一条别人不愿意走的路，或泥泞不堪，或荆棘丛生。
+  走山路就跟走人生的路一样，你不会轻易地知道下一条路在哪里，要怎样走才算对，还要多久才能抵达。错过和遇见都是对等的，没有公平与不公平，但凡小有成就的人，都一定是走了一条别人不愿意走的路，或泥泞不堪，或荆棘丛生。
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://imrui.net" # the base hostname & protocol for your site
 github_username:  imrui
@@ -44,15 +44,11 @@ navs:
 
   -
     href: /blog
-    label: 博文
+    label: 时光机
 
   -
     href: /bookmark
     label: 书签
-
-  -
-    href: /time
-    label: 时光机
 
   -
     href: /about
@@ -60,6 +56,12 @@ navs:
 
 post_category_name: 博文分类
 post_nav_name: 文内导航
+links_name: 友情链接
+
+links:
+  -
+    href: http://www.baidu.com
+    label: 百度
 
 # Google Analytics
 google_tracking_id: 'UA-80328712-1'
