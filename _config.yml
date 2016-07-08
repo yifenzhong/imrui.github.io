@@ -11,7 +11,7 @@ name: 董瑞博客
 home_title: 白首如新 倾盖如故
 home_sub_title: 时间是我们正在服下的毒药，也是未来我们的解药。
 keyword: "董瑞, 瑞, Rui, imrui, @imrui, dongrui, ruidong, app, 博客, 个人网站, 互联网, 游戏"
-qq: 25230462
+qq: 
 email: hilo.sky.do@gmail.com
 location: Beijing, China
 description: > # this means to ignore newlines until "baseurl:"
@@ -96,5 +96,5 @@ baidu_search:
 
 # For about.html. Fell free to create your own!
 skill_software_keywords: [Java, Python, Golang, C, lua, MySQL, Android, Linux, Nginx]
-skill_j2ee_keywords: [Spring, SpringMVC, MyBatis, Struct, Play Framework, JSP, Velocity]
+skill_j2ee_keywords: [Spring, SpringMVC, MyBatis, Struts, Play Framework, JSP, Velocity]
 skill_web_keywords: [Tornado, Flask, Django, AngularJS, Boostrap, HTML, CSS, JS, JQuery, Ajax]
