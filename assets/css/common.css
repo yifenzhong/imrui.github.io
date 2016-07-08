@@ -171,9 +171,11 @@
     font-weight: bold;
     display: block;
     text-decoration: none;
+    padding: 10px 15px;
 }
 
 .blog-menu-group li {
+    padding: 0 0;
     -webkit-transition: all 0.3s ease-in;
     -moz-transition: all 0.3s ease-in;
     -o-transition: all 0.3s ease-in;
@@ -190,4 +192,10 @@
 
 .user-icon-link ul li {
     float: left;
+}
+
+.about-contact-list a {
+    font-weight: bold;
+    display: block;
+    padding: 5px 0;
 }
