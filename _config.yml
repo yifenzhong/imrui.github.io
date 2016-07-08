@@ -75,13 +75,16 @@ links:
 
 
 # Google Analytics
-google_tracking_id: 'UA-80328712-1'
+# https://www.google.com/analytics/
+google_analytics:
+  enable: ture
+  id: 'UA-80328712-1'
 
 # Sidebar to show popular repo
 side_bar_repo_limit: 5 # Number of repos to show
 
 # https://www.google.com/cse/
-google_case:
+google_cse:
   enable: ture
   cx: 000063965395341567097:bmbju2qjbwy
 
