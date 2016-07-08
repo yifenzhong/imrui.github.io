@@ -27,14 +27,14 @@
     </div>
 </section>
 <script>
+    function categoryClick(category) {
+        $("." + category).removeClass("post-cat-hide").addClass("post-cat-show");
+    }
     $(document).ready(function(){
-        function categoryClick(category) {
-            $("." + category).removeClass("post-cat-hide").addClass("post-cat-show");
-        }
         var hash = window.location.hash;
         var cat;
         if(hash) {
-            cat = hash.substring(1);
+            cat = decodeURIComponent(hash.substring(1));
         } else {
             cat = $(".list-group-item:first").find("a").attr("title");
         }
