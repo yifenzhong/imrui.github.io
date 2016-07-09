@@ -27,7 +27,14 @@ linkedin_url: https://cn.linkedin.com/in/imrui
 google_plus_url: https://plus.google.com/u/0/103103594124075490506/posts
 
 # Disque
-disque: imrui.disqus.com
+disque:
+  enable: false
+  host: imrui.disqus.com
+
+# 多说评论
+duoshuo:
+  enable: true
+  short_name: imruiblog
 
 gems:
   - jekyll-paginate
