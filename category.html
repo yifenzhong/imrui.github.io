@@ -18,9 +18,9 @@ menu: 博文分类
                 <li class="post-list-item {% if post.category == 'site.categories[0][0]' %}post-cat-show{% else %}post-cat-hide{% endif %}  {{ post.category }}">
                     <h2 class="post-list-title">
                         <a class="hvr-underline-from-center" href="{{ post.url }}">{{ post.title }}</a>
-                        <p class="post-list-meta pull-right">
-                            <span class="octicon octicon-calendar"></span>{{ post.date | date: "%Y/%m/%d" }}
-                        </p>
+                        <span class="post-list-meta pull-right">
+                            <i class="octicon octicon-calendar"></i>{{ post.date | date: "%Y/%m/%d" }}
+                        </span>
                     </h2>
                     <p class="post-list-description">
                         {{ post.excerpt | strip_html | strip }}
