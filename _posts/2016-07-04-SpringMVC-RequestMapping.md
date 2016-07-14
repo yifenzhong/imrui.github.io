@@ -20,34 +20,34 @@ Annotation for **mapping web requests onto specific handler classes and/or handl
 
 * `method` indicates HTTP methods. It will support all methods if not specified .
 
-```
+```java
 method = RquestMethod.GET
 method = {RquestMethod.GET, RquestMethod.POST}
 ```
 
 * `consumes` indicates Content-Type of the mapped request. A request will be mapped only when its Content-Type matches it.
 
-```
+```java
 consumes = "application/json"
 consumes = {"application/json", "text/html"}
 ```
 
 * `produces` indicates the producible media types of the mapped request, **a request will be mapped only when Accept matches it**.
 
-```
+```java
 produces = "application/json"
 produces = {"application/json", "charset=UTF-8"}
 ```
 
 * `headers` indicates only the requests having these headers can be mapped.
 
-```
+```java
 headers = "content-type=text/*"
 ```
 
 * `params` indicates only the requests having these parameters can be mapped. We could also add `!=` pr `==` to add conditions.
 
-```
+```java
 // myParam exists and its value is myValue
 params="myParam = myValue" 
 
@@ -63,7 +63,7 @@ params = {"myParamA", "!myParamB"}
 
 ### Example
 
-```
+```java
 @Controller
 @RequestMapping("/users") 
 public class TestController {
@@ -96,7 +96,7 @@ public class TestController {
 
 >If we do not specify the url placeholder name like `@PathVariable('name')`, we must keep method parameter name  same as url placeholder.
 
-```
+```java
 @Controller
 @RequestMapping("/users") 
 public class TestController {
@@ -117,7 +117,7 @@ public class TestController {
 
 A more complex example:
 
-```
+```java
 @Controller
 @RequestMapping("/users/{userId}")
 public class TestController {
@@ -136,7 +136,7 @@ It is used to **bind request parameters to a method parameter in the controller*
 
 As usual, we do it like this `request.getParameter("name")`, now with annotation:
 
-```
+```java
 @RequestMapping(value="/user/{userId}/books", method = RequestMethod.GET)
 public void test(
 	@PathVariable("userId") int user,
@@ -159,7 +159,7 @@ It has three properties:
 
 Same as `@RequestParam` but bind cookie values to a method parameter. It also has three properties `value`, `required` and `defaultValue` which are also the same 
 
-```
+```java
 @RequestMapping(value="/user", method = RequestMethod.GET)
 public void test(@CookieValue("foo") String valueFromCookie) {
   	...

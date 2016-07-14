@@ -41,7 +41,7 @@ gems:
   - jekyll-geo-pattern
   - jekyll-github-metadata
   - kramdown
-  - rouge
+#  - rouge
 
 markdown: kramdown
 lsi: false
@@ -50,8 +50,10 @@ incremental: false
 
 kramdown:
   input:  GFM
-  enable_coderay: true
-  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    disable: true
+#  enable_coderay: true
+#  syntax_highlighter: rouge
 
 # Pagination
 paginate: 10

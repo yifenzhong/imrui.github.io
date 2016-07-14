@@ -18,6 +18,7 @@
     {% for javascript in page.javascript %}
     <script src="/assets/js/{{javascript}}"></script>
     {% endfor %}
+    <script>hljs.initHighlightingOnLoad();</script>
     {% if site.google_analytics.enable %}
     <!-- Google Analytics -->
     <div style="display:none">
@@ -31,6 +32,5 @@
       </script>
     </div>
     {% endif %}
-    <script>hljs.initHighlightingOnLoad();</script>
   </div>
 </footer>
