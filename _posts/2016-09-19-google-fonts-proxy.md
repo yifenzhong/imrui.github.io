@@ -5,7 +5,7 @@ categories: [Nginx]
 tags: [nginx]
 ---
 
-Nginx配置Google Fonts反向代理
+使用Nginx反向代理谷歌字体库，可以设置缓存加快访问速度。
 
 ## 谷歌字体库
 
