@@ -19,14 +19,14 @@ https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300itali
 
 ```
 http://fonts.useso.com/css?family=Source+Sans+Pro:300,400,600,300italic,400italic,600italic
-360的，目前已不在维护
+360的，目前已不再维护
 
 http://fonts.gmirror.org/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700
 ```
 
-### 使用别人镜像存在的问题
+### 使用过程的一些问题
 
-1. 大部分部支持https
+1. 大部分镜像不支持https
 2. 打开页面的速度寄托在别人的服务器
 3. 特殊网络环境可能无法访问
 
